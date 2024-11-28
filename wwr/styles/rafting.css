@@ -6,64 +6,85 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--primary-color);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 h1, h2 {
-    font-family: 'Roboto', sans-serif;
-    color: var(--secondary-color);
-}
-
-footer a img {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.hero {
-    position: relative;
     text-align: center;
 }
 
-.hero-img {
-    width: 100%;
-    display: block;
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background: #2a2a2a;
+    color: white;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--accent1-color);
-    font-size: 2.5rem;
+header img {
+    height: 60px;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: var(--accent2-color);
-    opacity: 0.8;
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 80%;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-/* Style for the image inside the article */
-.hero article img {
-    float: right; /* Makes the image float to the right of the paragraph */
-    max-width: 150px; /* Sets a maximum width for the image */
-    margin: 0 0 1rem 1rem; /* Adds space around the image */
-    border-radius: 8px; /* Rounds the corners of the image */
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+#history {
+    padding: 20px;
+    background: #f4f4f4;
 }
 
-.hero article p {
-    margin: 0;
-    line-height: 1.6; /* Improves readability */
+#history p {
+    max-width: 800px;
+    margin: auto;
+}
+#adventures {
+    padding: 20px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2a2a2a;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
